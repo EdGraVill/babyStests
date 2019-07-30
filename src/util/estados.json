@@ -1,0 +1,226 @@
+{
+  "Aguascalientes": {
+    "Estado": "Aguascalientes",
+    "Variable": "Ags.",
+    "RENAPO": "AS",
+    "2 Dígitos": "AG",
+    "3 Dígitos": "AGU"
+  },
+  "Baja California": {
+    "Estado": "Baja California",
+    "Variable": "B.C.",
+    "RENAPO": "BC",
+    "2 Dígitos": "BC",
+    "3 Dígitos": "BCN"
+  },
+  "Baja California Sur": {
+    "Estado": "Baja California Sur",
+    "Variable": "B.C.S.",
+    "RENAPO": "BS",
+    "2 Dígitos": "BS",
+    "3 Dígitos": "BCS"
+  },
+  "Campeche": {
+    "Estado": "Campeche",
+    "Variable": "Camp.",
+    "RENAPO": "CC",
+    "2 Dígitos": "CM",
+    "3 Dígitos": "CAM"
+  },
+  "Chiapas": {
+    "Estado": "Chiapas",
+    "Variable": "Chis.",
+    "RENAPO": "CS",
+    "2 Dígitos": "CS",
+    "3 Dígitos": "CHP"
+  },
+  "Chihuahua": {
+    "Estado": "Chihuahua",
+    "Variable": "Chih.",
+    "RENAPO": "CH",
+    "2 Dígitos": "CH",
+    "3 Dígitos": "CHH"
+  },
+  "Ciudad de México": {
+    "Estado": "Ciudad de México",
+    "Variable": "C.D.Mx.",
+    "RENAPO": "DF",
+    "2 Dígitos": "CX",
+    "3 Dígitos": "CMX"
+  },
+  "Coahuila": {
+    "Estado": "Coahuila",
+    "Variable": "Coah.",
+    "RENAPO": "CL",
+    "2 Dígitos": "CO",
+    "3 Dígitos": "COA"
+  },
+  "Colima": {
+    "Estado": "Colima",
+    "Variable": "Col.",
+    "RENAPO": "CM",
+    "2 Dígitos": "CL",
+    "3 Dígitos": "COL"
+  },
+  "Durango": {
+    "Estado": "Durango",
+    "Variable": "Dgo.",
+    "RENAPO": "DG",
+    "2 Dígitos": "DG",
+    "3 Dígitos": "DUR"
+  },
+  "Guanajuato": {
+    "Estado": "Guanajuato",
+    "Variable": "Gto.",
+    "RENAPO": "GT",
+    "2 Dígitos": "GT",
+    "3 Dígitos": "GUA"
+  },
+  "Guerrero": {
+    "Estado": "Guerrero",
+    "Variable": "Gro.",
+    "RENAPO": "GR",
+    "2 Dígitos": "GR",
+    "3 Dígitos": "GRO"
+  },
+  "Hidalgo": {
+    "Estado": "Hidalgo",
+    "Variable": "Hgo.",
+    "RENAPO": "HG",
+    "2 Dígitos": "HG",
+    "3 Dígitos": "HID"
+  },
+  "Jalisco": {
+    "Estado": "Jalisco",
+    "Variable": "Jal.",
+    "RENAPO": "JC",
+    "2 Dígitos": "JC",
+    "3 Dígitos": "JAL"
+  },
+  "Estado de México": {
+    "Estado": "Estado de México",
+    "Variable": "Edo. Méx.",
+    "RENAPO": "MC",
+    "2 Dígitos": "EM",
+    "3 Dígitos": "MEX"
+  },
+  "Michoacán": {
+    "Estado": "Michoacán",
+    "Variable": "Mich.",
+    "RENAPO": "MN",
+    "2 Dígitos": "MI",
+    "3 Dígitos": "MIC"
+  },
+  "Morelos": {
+    "Estado": "Morelos",
+    "Variable": "Mor.",
+    "RENAPO": "MS",
+    "2 Dígitos": "MO",
+    "3 Dígitos": "MOR"
+  },
+  "Nayarit": {
+    "Estado": "Nayarit",
+    "Variable": "Nay.",
+    "RENAPO": "NT",
+    "2 Dígitos": "NA",
+    "3 Dígitos": "NAY"
+  },
+  "Nuevo León": {
+    "Estado": "Nuevo León",
+    "Variable": "N.L.",
+    "RENAPO": "NL",
+    "2 Dígitos": "NL",
+    "3 Dígitos": "NLE"
+  },
+  "Oaxaca": {
+    "Estado": "Oaxaca",
+    "Variable": "Oax.",
+    "RENAPO": "OC",
+    "2 Dígitos": "OA",
+    "3 Dígitos": "OAX"
+  },
+  "Puebla": {
+    "Estado": "Puebla",
+    "Variable": "Pue.",
+    "RENAPO": "PL",
+    "2 Dígitos": "PU",
+    "3 Dígitos": "PUE"
+  },
+  "Querétaro": {
+    "Estado": "Querétaro",
+    "Variable": "Qro.",
+    "RENAPO": "QO",
+    "2 Dígitos": "QT",
+    "3 Dígitos": "QUE"
+  },
+  "Quintana Roo": {
+    "Estado": "Quintana Roo",
+    "Variable": "Q. Roo.",
+    "RENAPO": "QR",
+    "2 Dígitos": "QR",
+    "3 Dígitos": "ROO"
+  },
+  "San Luis Potosí": {
+    "Estado": "San Luis Potosí",
+    "Variable": "S.L.P.",
+    "RENAPO": "SP",
+    "2 Dígitos": "SL",
+    "3 Dígitos": "SLP"
+  },
+  "Sinaloa": {
+    "Estado": "Sinaloa",
+    "Variable": "Sin.",
+    "RENAPO": "SL",
+    "2 Dígitos": "SI",
+    "3 Dígitos": "SIN"
+  },
+  "Sonora": {
+    "Estado": "Sonora",
+    "Variable": "Son.",
+    "RENAPO": "SR",
+    "2 Dígitos": "SO",
+    "3 Dígitos": "SON"
+  },
+  "Tabasco": {
+    "Estado": "Tabasco",
+    "Variable": "Tab.",
+    "RENAPO": "TC",
+    "2 Dígitos": "TB",
+    "3 Dígitos": "TAB"
+  },
+  "Tamaulipas": {
+    "Estado": "Tamaulipas",
+    "Variable": "Tamps.",
+    "RENAPO": "TS",
+    "2 Dígitos": "TM",
+    "3 Dígitos": "TAM"
+  },
+  "Tlaxcala": {
+    "Estado": "Tlaxcala",
+    "Variable": "Tlax.",
+    "RENAPO": "TL",
+    "2 Dígitos": "TL",
+    "3 Dígitos": "TLA"
+  },
+  "Veracruz": {
+    "Estado": "Veracruz",
+    "Variable": "Ver.",
+    "RENAPO": "VZ",
+    "2 Dígitos": "VE",
+    "3 Dígitos": "VER"
+  },
+  "Yucatán": {
+    "Estado": "Yucatán",
+    "Variable": "Yuc.",
+    "RENAPO": "YN",
+    "2 Dígitos": "YU",
+    "3 Dígitos": "YUC"
+  },
+  "Zacatecas": {
+    "Estado": "Zacatecas",
+    "Variable": "Zac.",
+    "RENAPO": "ZS",
+    "2 Dígitos": "ZA",
+    "3 Dígitos": "ZAC"
+  }
+}

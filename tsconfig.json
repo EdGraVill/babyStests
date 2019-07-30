@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "./dist/",
+    "rootDir": "./src/",
+    "removeComments": true,
+    // "isolatedModules": true,               /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "files": [
+    "./src/index.d.ts"
+  ],
+  "include": [
+    "./src"
+  ]
+}

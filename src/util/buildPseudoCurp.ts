@@ -1,6 +1,12 @@
 import estados from './estados.json';
 import altisonantes from './altisonantes.json';
 
+/**
+ * Function that chech if the first letter of a word is a vocal
+ *
+ * @param {string} word
+ * @returns {boolean}
+ */
 const isVocal = (word: string): boolean => {
   const char = word[0];
   // Also include X becuase it can be interpreted as vocal
@@ -9,6 +15,12 @@ const isVocal = (word: string): boolean => {
   return vocals.indexOf(char.toUpperCase()) !== -1;
 };
 
+/**
+ * Function that chech if the first letter of a word is a consonant
+ *
+ * @param {string} word
+ * @returns {boolean}
+ */
 const isConsonant = (word: string): boolean => {
   const char = word[0];
   const constonants = ['B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z'];
@@ -16,16 +28,42 @@ const isConsonant = (word: string): boolean => {
   return constonants.indexOf(char.toUpperCase()) !== -1;
 };
 
+/**
+ * It changes all the characters with dieresis or tilde to a normal character, example: Ü -> U
+ *
+ * @param {string} str
+ * @returns {string}
+ */
 const normalize = (str: string): string => str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
+/**
+ * It uppercase all the characters in a string
+ *
+ * @param {string} str
+ * @returns {string}
+ */
 const upper = (str: string): string => str.toUpperCase();
 
+/**
+ * Replace all the invalid characters with an X
+ *
+ * @param {string} word
+ * @returns {string}
+ */
 const changeForX = (word: string): string => {
   const invalidCharters = ['/', '-', '.', 'Ñ'];
 
   return word.split('').map((c): string => (invalidCharters.indexOf(c) !== -1 ? 'X' : c)).join('');
 };
 
+/**
+ * Filter function who take off all the matches with Maria, Ma., Ma, Jose, J, J.
+ *
+ * @param {string} word
+ * @param {number} index
+ * @param {string[]} array
+ * @returns {boolean}
+ */
 const filterNotMAJO = (word: string, index: number, array: string[]): boolean => {
   const isMAJO = ['MARIA', 'MA.', 'MA', 'JOSE', 'J', 'J.'].indexOf(word) !== -1;
 
@@ -38,12 +76,42 @@ const filterNotMAJO = (word: string, index: number, array: string[]): boolean =>
   return true;
 };
 
+/**
+ * Filter function who take off all the prepositions
+ *
+ * @param {string} word
+ * @returns {boolean}
+ */
 const filterPreposition = (word: string): boolean => ['DA', 'DAS', 'DE', 'DEL', 'DER', 'DI', 'DIE', 'DD', 'EL', 'LA', 'LOS', 'LAS', 'LE', 'LES', 'MAC', 'MC', 'VAN', 'VON', 'Y'].indexOf(word) === -1;
 
+/**
+ * Get first vocal or X from a string
+ *
+ * @param {string} word
+ * @returns {string}
+ */
 const getFirstVocal = (word: string): string => word.split('').filter(isVocal)[0];
 
+/**
+ * Get first consonant from a string
+ *
+ * @param {string} word
+ * @returns {string}
+ */
 const getFirstConsonant = (word: string): string => word.split('').filter(isConsonant)[0];
 
+/**
+ *
+ *
+ * @param {User.PersonalInformation} {
+ *   apellidos,
+ *   estadoNacimiento,
+ *   fechaNacimiento,
+ *   nombres,
+ *   sexo,
+ * }
+ * @returns {string}
+ */
 const buildPseudoCurpt = ({
   apellidos,
   estadoNacimiento,

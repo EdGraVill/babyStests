@@ -3,6 +3,37 @@ import { Schema } from 'mongoose';
 import validateCurp from '../../util/validateCurp';
 import estados from '../../util/estados.json';
 
+/**
+ * Function that take a curp and validate it
+ *
+ * @export
+ * @param {User.Schema} this
+ * @param {string} curp
+ * @returns {boolean}
+ */
+export function curpValidator(this: User.Schema, curp: string): boolean {
+  const personalInformation: User.PersonalInformation = {
+    apellidos: this.apellidos,
+    estadoNacimiento: this.estadoNacimiento,
+    fechaNacimiento: this.fechaNacimiento,
+    nombres: this.nombres,
+    sexo: this.sexo,
+  };
+
+  return validateCurp(curp, personalInformation);
+}
+
+/**
+ * Function that hash a gived password
+ *
+ * @export
+ * @param {string} password
+ * @returns {string}
+ */
+export function hashPassword(password: string): string {
+  return hashSync(password, 10);
+}
+
 const schema: Schema = new Schema({
   active: {
     default: true,
@@ -21,17 +52,7 @@ const schema: Schema = new Schema({
     type: String,
     unique: true,
     validate: {
-      validator(this: User.Schema, curp: string): boolean {
-        const personalInformation: User.PersonalInformation = {
-          apellidos: this.apellidos,
-          estadoNacimiento: this.estadoNacimiento,
-          fechaNacimiento: this.fechaNacimiento,
-          nombres: this.nombres,
-          sexo: this.sexo,
-        };
-
-        return validateCurp(curp, personalInformation);
-      },
+      validator: curpValidator,
     },
   },
   email: {
@@ -56,9 +77,7 @@ const schema: Schema = new Schema({
   },
   password: {
     required: true,
-    set(password: string): string {
-      return hashSync(password, 10);
-    },
+    set: hashPassword,
     type: String,
   },
   sexo: {

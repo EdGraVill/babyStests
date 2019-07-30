@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User model Must throw an error if required fields aren't provided 1`] = `[ValidationError: User validation failed: sexo: Path \`sexo\` is required., password: Path \`password\` is required., nombres: Path \`nombres\` is required., fechaNacimiento: Path \`fechaNacimiento\` is required., estadoNacimiento: Path \`estadoNacimiento\` is required., email: Path \`email\` is required., curp: Path \`curp\` is required., apellidos: Path \`apellidos\` is required.]`;

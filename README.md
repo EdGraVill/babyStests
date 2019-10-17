@@ -23,3 +23,4 @@ Repository with Node App Example to learn test
 
 - [Jest Home Page](https://jestjs.io)
 - [Configure Typescript for Jest](https://jestjs.io/docs/en/getting-started.html#using-typescript)
+- [CURP Guide](http://www.ordenjuridico.gob.mx/Federal/PE/APF/APC/SEGOB/Instructivos/InstructivoNormativo.pdf)
